@@ -22,7 +22,7 @@
                             <li><a class="link" href="#contact-section">Контакти</a></li>
                         </ul>
                     </nav>
-                    <button class="button" type="button">Замовити дзвінок</button>
+                    <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
                 </div>
             </div>
        </header>
@@ -98,10 +98,10 @@
                     <h2 class="formats-title section-title centered">Формати</h2>
                     <div class="formats-container">
                             <button class="carousel-button" type="button">
-                            <svg width="16" heaght="16">
-                                <use href="./images/icons.svg#icon-arrow"></use>
-                            </svg>
-                        </button>
+                                <svg width="16" heaght="16">
+                                    <use href="./images/icons.svg#icon-arrow"></use>
+                                </svg>
+                            </button>
                         <ul class="formats-list">
                             <li class="formats-item">
                                 <article class="format-card">
@@ -137,7 +137,7 @@
                                 </article>
                             </li>
                         </ul>
-                        <button class="carousel-button" type="button">
+                        <button class="carousel-button next" type="button">
                             <svg width="16" heaght="16">
                                 <use href="./images/icons.svg#icon-arrow"></use>
                             </svg>
@@ -202,8 +202,30 @@
                         </div>
                     </address>
                 </div>
-                
             </div>
        </footer>
+
+       <div class="backdrop">
+            <div class="modal">
+                <button class="modal-btn-close" type="button">Close</button>
+                <h2>Замовити дзвінок</h2>
+                <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+                <form name="contact-form" autocomplete="off" novalidate>
+                    <label for="user-name">Ім'я</label>
+                    <input type="text" name="user-name" id="user-name" />
+
+                    <label for="user-tel">Телефон</label>
+                    <input type="tel" name="user-tel" id="user-tel" />
+
+                    <label for="user-email">Електронна пошта</label>
+                    <input type="email" name="user-email" id="user-email" />
+
+                    <button type="submit">Замовити дзвінок</button>
+                    <p>Натискаючи на кнопку я погоджуюсь з <a href="#">політикою конфіденційності</a></p>
+                </form>
+            </div>
+       </div>
+
+       <script defer src="./js/modal.js"></script>
     </body>
 </html>
