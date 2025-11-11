@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\scss\\utils\\texts.scss"],"names":[],"mappings":"AAAA,YACI,+BAAA,CAGJ,WACI,eAAA,CAGJ,gBACG,wBAAA","file":"texts.min.css","sourcesContent":[".text-brand {\r\n    color: var(--color-brand-normal); \r\n}\r\n\r\n.text-bold {\r\n    font-weight: 600;\r\n}\r\n\r\n.text-uppercase {\r\n   text-transform: uppercase;\r\n}"]}
